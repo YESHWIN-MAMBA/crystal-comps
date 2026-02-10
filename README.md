@@ -206,4 +206,4 @@ Common improvements:
 
 ## License
 
-Internal / private project (update as needed).
+Internal / Individual / Private project.
