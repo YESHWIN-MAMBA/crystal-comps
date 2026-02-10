@@ -7,7 +7,7 @@ export default function Hero({ id }) {
       <div className="container">
         <SectionShell side="left">
           <div className="heroCopy">
-            <div className="badge glass">Live • New drop every hour</div>
+            <div className="badge glass">Live • New drop every month</div>
             <h1 className="h1 metalTitle">
               Win premium prizes with a single ticket.<br></br>
               <span className="grad"> Crystal clear odds.</span>
