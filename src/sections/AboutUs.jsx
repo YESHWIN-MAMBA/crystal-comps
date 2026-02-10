@@ -48,7 +48,6 @@ export default function AboutUs({ id }) {
               </div>
               <div className="fineprint">
                 Dont just take our word. Explore our KPIs, player stats, and{" "}
-                <br></br>
                 reviews with facebook & trustpilot.
               </div>
             </GlassCard>
