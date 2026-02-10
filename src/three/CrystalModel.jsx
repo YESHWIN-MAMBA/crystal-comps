@@ -9,8 +9,6 @@ function useHeroActive() {
   return (timeline) => timeline < 0.85;
 }
 
-useGLTF.preload("/models/crystal-spinner.glb");
-
 const clamp = THREE.MathUtils.clamp;
 
 function lerp(a, b, t) {
@@ -18,7 +16,10 @@ function lerp(a, b, t) {
 }
 
 export default function CrystalModel({ timeline }) {
-  const { scene } = useGLTF("/models/crystal-spinner.glb");
+  const MODEL_URL = `${import.meta.env.BASE_URL}models/crystal-spinner.glb`;
+
+  useGLTF.preload(MODEL_URL);
+  const { scene } = useGLTF(MODEL_URL);
 
   // Outer group is driven by scroll keyframes (position/scale/rough rotation)
   const outer = useRef();

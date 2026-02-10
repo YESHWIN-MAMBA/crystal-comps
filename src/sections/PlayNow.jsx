@@ -19,7 +19,12 @@ export default function PlayNow({ id }) {
 
             <GlassCard className="playCard">
               <div className="playTop">
-                <img className="prizeImg" src="/images/prize.jpg" alt="Prize" />
+                <img
+                  className="prizeImg"
+                  src={`${import.meta.env.BASE_URL}images/prize.jpg`}
+                  alt="Prize"
+                />
+
                 <div className="playMeta">
                   <div className="playTitle">Win Renault Capture</div>
                   <div className="muted">
